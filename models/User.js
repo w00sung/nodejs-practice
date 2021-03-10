@@ -8,11 +8,15 @@ const userSchema = mongoose.Schema({
     email : {
         type : String,
         trim : true,    // 빈칸을 trim 시킨다.
-        unique : 1
+        unique : 1  // unique 해야한다.
     },
     password :{ 
         type : String,
-        maxlength : 50
+        maxlength : 5
+    },
+    lastname: {
+        type:String,
+        maxlength:50
     },
     role:{  // 권한
         type : Number,
